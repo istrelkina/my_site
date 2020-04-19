@@ -1,0 +1,138 @@
+@import 'fonts';
+
+
+html{
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+a{
+	display: inline-block;
+	text-decoration: none;
+	
+}
+ul,
+li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+@font-face {
+	font-family: 'Museo Sans';
+	src: url('../fonts/MuseoSansCyrl-700.eot');
+	src: url('../fonts/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/MuseoSansCyrl-700.woff') format('woff'),
+	url('../fonts/MuseoSansCyrl-700.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Museo Sans';
+	src: url('../fonts/MuseoSansCyrl-500.eot');
+	src: url('../fonts/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/MuseoSansCyrl-500.woff') format('woff'),
+	url('../fonts/MuseoSansCyrl-500.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+body{
+	color: #fff;
+	font-family: 'Museo Sans', sans-serif;
+}
+//--------------------------------Start Header----------------------------------
+.header{
+	height: 100vh;
+	width: 100%;
+	background-image: url(../images/content/header-bg.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.container{
+	width: 990px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.header__contacts{
+	height: 25vh;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	display: flex;
+	justify-content: flex-end;
+	ul{
+		margin-top: 20px;
+		li{
+			margin-bottom: 15px;
+		}
+		li::before{
+			left: -20px;
+		}
+		a{
+			color: #fff;
+			margin-left: 10px;
+			font-family: 'Museo Sans', sans-serif;
+		}
+	}
+}
+.header__info{
+	
+	font-weight: 700;
+	text-transform: uppercase;
+	.header__title h1{
+		font-size: 42px;
+	}
+	.header__description{
+		font-size: 24px;
+		font-weight: 500;
+		text-shadow: 1px 1px 2px #000;
+	}
+	.order-link{
+		color: #fff;
+		background-color: #c70101;
+		font-size: 16px;
+		font-weight: 500;
+		padding: 18px 42px;
+		
+		border-radius: 5px;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+//--------------------------------End Header----------------------------------
+//--------------------------------Start Advantages----------------------------
+.advantages{
+	color: #0d0d0d;
+	margin: 65px 0 150px 0;
+}
+
+.advantages__title h2{
+	font-size: 30px;
+	text-wrap: 700px;
+	text-align: center;
+	margin-bottom: 65px;
+}
+.advantages__wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+.advantages__item{
+	max-width: 290px;
+	h3{
+		font-size: 18px;
+		font-weight: 700;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.advantages__text{
+		font-size: 14px;
+		line-height: 22px;
+		text-align: center;
+	}
+}
+//--------------------------------End Advantages----------------------------
+//--------------------------------Start Order----------------------------
