@@ -20,24 +20,7 @@ li{
 	padding: 0;
 	list-style: none;
 }
-@font-face {
-	font-family: 'Museo Sans';
-	src: url('../fonts/MuseoSansCyrl-700.eot');
-	src: url('../fonts/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/MuseoSansCyrl-700.woff') format('woff'),
-	url('../fonts/MuseoSansCyrl-700.ttf') format('truetype');
-	font-weight: 700;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'Museo Sans';
-	src: url('../fonts/MuseoSansCyrl-500.eot');
-	src: url('../fonts/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/MuseoSansCyrl-500.woff') format('woff'),
-	url('../fonts/MuseoSansCyrl-500.ttf') format('truetype');
-	font-weight: 500;
-	font-style: normal;
-}
+
 body{
 	color: #fff;
 	font-family: 'Museo Sans', sans-serif;
@@ -136,3 +119,51 @@ body{
 }
 //--------------------------------End Advantages----------------------------
 //--------------------------------Start Order----------------------------
+.order{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../images/content/order-bg.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+.order__title{
+	padding-top: 90px;
+	h2{
+		font-size: 36px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	margin-bottom: 90px;
+}
+.form-title{
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.order__form{
+	input{
+		font-size: 14px;
+		font-weight: 300;
+		color: #4b4b4b;
+		padding: 20px;
+		display: block;
+		width: 300px;
+		margin-bottom: 15px;
+		border: none;
+		border-radius: 5px;
+	}
+}
+.order-btn{
+	color: #fff;
+	background-color: #c70101;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 18px 42px;
+	text-transform: uppercase;
+	border-radius: 5px;
+	border: none;
+	&:hover{
+		text-decoration: underline;
+	}
+}
