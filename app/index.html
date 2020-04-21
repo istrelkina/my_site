@@ -30,12 +30,11 @@
 					</div>
 					<div class="header__description">
 						<p>Индивидуальный, современный дизайн</p>
-						<p>Кроссбраузерная  + валидная + адаптивная верстка с помощью Flexbox</p>
-						<p>Использование технологий, ускоряющих и оптимизирующих верстку 
-							(Gulp + препроцессор SCSS)					</p>
+						<p>Кроссбраузерная  + валидная + адаптивная верстка</p>
+						<p>Использование технологий, ускоряющих и оптимизирующих верстку </p>
 					</div>
 					<div class="btn-order">
-						<a href="#" class="order-link">Заказать консультацию</a>
+						<a href="#order-section" class="order-link">Заказать консультацию</a>
 					</div>
 				</div>
 			</div>
@@ -45,34 +44,47 @@
 	<section class="advantages">
 		<div class="container">
 			<div class="advantages__title">
-				<h2>НАШИ ПРЕИМУЩЕСТВА</h2>
+				<h2>ПРЕИМУЩЕСТВА</h2>
 			</div>
 			<div class="advantages__wrapper">
+				
+				<div class="advantages__item">
+					<h3>Мои умения и навыки</h3>
+					<div class="advantages__text">    
+						<ul>
+							<li>Верстка HTML + CSS</li>
+							<li>адаптивная верстка</li>
+							
+							<li>Опыт работы с Git</li>
+							
+							<li>Gulp, SCSS</li>	
+							<li>Flexbox, JQuery</li>
+							<li>WordPress</li>						
+							
+						</ul>
+
+					</div>
+				</div>
 				<div class="advantages__item">
 					<h3>Ответственность</h3>
 					<div class="advantages__text">
-						Мы предлагаем широкий спектр услуг по развитию. Наши компетентные менеджеры с радостью предложат Вам эффективное решение любых задач
+						Я руководствуюсь принципом, что если берешься за выполнение задачи, дело нужно обязательно довести до конца, качественно и в срок.
 					</div>
 				</div>
 				<div class="advantages__item">
 					<h3>Высокое качество работ</h3>
 					<div class="advantages__text">
-						Мы чётко и ясно обозначаем задачи и организовываем работу по их решению. Работая с нами, Вы будете видеть прогресс продвижения в реальном времени
+						На начальном этапе очень важно грамотно составить ТЗ, как можно подробнее обозначить, какую цель, информацию 
+						будет нести сайт. Это уже половина успеха.
 
 					</div>
 				</div>
-				<div class="advantages__item">
-					<h3>Внимание к деталям</h3>
-					<div class="advantages__text">
-						Для эффективного продвижения мы уделяем внимание каждой детали. Для каждого клиента мы создаем индивидуальные решения и методы продвижения
-
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</section>
 
-	<section class="order">
+	<section class="order" id='order-section'>
 		<div class="container">
 			<div class="order__title">
 				<h2>Получите бесплатную консультацию по САЙТАМ</h2>
@@ -81,11 +93,11 @@
 				<div class="form-title">
 					Заполните форму заявки 
 				</div>
-				<form action="">
-					<input type="text" required placeholder="Ваше имя">
-					<input type="text" required placeholder="Ваше телефон">
-					<input type="text" required placeholder="Ваше E-mail">
-					<button class="order-btn">Заказать консультацию</button>
+				<form action="send.php" method="post">
+					<input type="text" required placeholder="Ваше имя*" name="first_name">
+					<input type="text" required placeholder="Ваше телефон*" name="phone">
+					<input type="text" required placeholder="Ваше E-mail*" name="email">
+					<button class="order-btn" type="submit" name="submit">Заказать консультацию</button>
 				</form>
 			</div>
 		</div>
@@ -156,7 +168,7 @@
 			<h2 class="footer__title">
 				Контакты
 			</h2>
-			<h3>Стрелкина Ирина</h3>
+			<div class="footer__info">Стрелкина Ирина, г. Уссурийск. </div>
 			<div class="footer__links">
 				<ul>
 					<li class="icon-envelope-o"><a href="mailto: strelaweb@gmail.com">strelaweb@gmail.com</a></li>
@@ -169,9 +181,8 @@
 		</div>
 	</footer>
 	
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
-	<script src="js/main.js"></script>
+	
 </body>
 </html>
