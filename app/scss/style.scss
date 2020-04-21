@@ -127,7 +127,7 @@ body{
 //--------------------------------Start Order----------------------------
 .order{
 	width: 100%;
-	height: 100vh;
+	height: 660px;
 	background-image: url(../images/content/order-bg.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -148,6 +148,12 @@ body{
 	margin-bottom: 20px;
 }
 .order__form{
+	position: relative;
+	form{
+		position: absolute;
+		top: 36px;
+		left: 0;
+	}
 	input{
 		font-size: 14px;
 		font-weight: 300;
